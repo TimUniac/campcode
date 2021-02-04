@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<title>Survey</title>
+	<link href="Challenge2.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="Challenge2.js"></script>
+  </head>
+<body id="main">
+<h1 id="title">
+    Would you like to take a survey? </h1>
+<div>
+  <p id="description">
+  This is a survey! You should fill it out as best you can so we can have all of your information for non nefarious purposes.  
+</p>
+  <form id="survey-form">
+<p>
+  <label="Name" id="name-label">
+    Name
+  <input id="name" type="text" placeholder="Name" required>
+</label>
+</p>
+<p>
+  <label="Email" id="email-label">
+    Email
+  <input id="email" type="email" placeholder="Email" required>
+</label>
+</p>
+<p>
+  <label="number" id="number-label">
+    Number
+    <input id="number" type="number" placeholder="#" min="1" max="10">
+  </label>
+  </p>
+<label for="cars">Choose a car:</label>
+
+<select name="cars" id="dropdown">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select> 
+
+<label> 
+  <input type="radio" name="indoor-outdoor">Indoor 
+</label>
+<label> 
+  <input type="radio" name="indoor-outdoor">Outdoor 
+</label>
+<label> 
+  <input type="radio" name="indoor-outdoor">This Door
+</label>
+<label> 
+  <input type="radio" name="indoor-outdoor">That Door
+</label>
+
+<label for="loving"><input id="loving" type="checkbox" name="personality" value="love"> Loving</label>
+<label for="hating"><input id="hating"type="checkbox" name="personality" value="hate"> Hating</label>
+<label for="bacon"><input id="bacon" type="checkbox" name="personality"value="bacon"> Bacon</label>
+
+<label for="comments"><input id="comments" type="text-area"> </label>
+
+<label for="submit"><input id="submit" type="button"> Submit
+
+</label>
+    </form>
+</div>
+</body>
+</html>
