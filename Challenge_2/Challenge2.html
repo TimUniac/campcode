@@ -4,32 +4,72 @@
 
 <head>
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-	<title>Survey</title>
-	<link href="Challenge2.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="Challenge2.js"></script>
+	<title>Survey</title>    
   </head>
+
 <body id="main">
+  <style>
+    #main{
+
+}
+
+#description{
+
+}
+
+#title{
+
+}
+
+#survey-form{
+
+}
+
+#name{
+
+}
+
+#email{
+
+}
+
+#number{
+
+}
+
+#name-label{
+
+}
+
+#email-label{
+
+}
+
+#number-label{
+    
+}
+  </style>
 <h1 id="title">
     Would you like to take a survey? </h1>
 <div>
   <p id="description">
   This is a survey! You should fill it out as best you can so we can have all of your information for non nefarious purposes.  
 </p>
-  <form id="survey-form">
+  <form id="survey-form" action="">
 <p>
-  <label="Name" id="name-label">
+  <label for="name" id="name-label">
     Name
   <input id="name" type="text" placeholder="Name" required>
 </label>
 </p>
 <p>
-  <label="Email" id="email-label">
+  <label for="Email" id="email-label">
     Email
   <input id="email" type="email" placeholder="Email" required>
 </label>
 </p>
 <p>
-  <label="number" id="number-label">
+  <label for="number" id="number-label">
     Number
     <input id="number" type="number" placeholder="#" min="1" max="10">
   </label>
@@ -44,28 +84,33 @@
 </select> 
 
 <label> 
-  <input type="radio" name="indoor-outdoor">Indoor 
+  <input type="radio" name="indoor-outdoor" value="Indoor">Indoor 
 </label>
 <label> 
-  <input type="radio" name="indoor-outdoor">Outdoor 
+  <input type="radio" name="indoor-outdoor" value="outdoor">Outdoor 
 </label>
 <label> 
-  <input type="radio" name="indoor-outdoor">This Door
+  <input type="radio" name="indoor-outdoor" value="this door">This Door
 </label>
 <label> 
-  <input type="radio" name="indoor-outdoor">That Door
+  <input type="radio" name="indoor-outdoor" value="that door">That Door
 </label>
-
+</br>
 <label for="loving"><input id="loving" type="checkbox" name="personality" value="love"> Loving</label>
 <label for="hating"><input id="hating"type="checkbox" name="personality" value="hate"> Hating</label>
 <label for="bacon"><input id="bacon" type="checkbox" name="personality"value="bacon"> Bacon</label>
+</br>
 
-<label for="comments"><input id="comments" type="text-area"> </label>
+</br>
+<label for="comments">comments
+  <textarea id="comments"> </textarea>
+</label>
 
-<label for="submit"><input id="submit" type="button"> Submit
+<label for="submit"><input id="submit" type="submit"> Submit
 
 </label>
     </form>
 </div>
+<script src=https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js></script>
 </body>
 </html>
